@@ -1,0 +1,34 @@
+$shadow-offset-x: 0.0625rem;
+$shadow-offset-y: 0.0625rem;
+$shadow-blur: 0.0625rem;
+$shadow-opacity: 0.15;
+
+$box-shadow: $shadow-offset-x $shadow-offset-y $shadow-blur rgba(0, 0, 0, $shadow-opacity);
+
+$text-shadow: $shadow-offset-x $shadow-offset-y $shadow-blur rgba(0, 0, 0, $shadow-opacity);
+
+%box-shadow {
+  box-shadow: $box-shadow;
+}
+
+%text-shadow {
+  text-shadow: $text-shadow;
+}
+
+%dynamic-box-shadow {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: $shadow-offset-y;
+    left: $shadow-offset-x;
+    z-index: -1;
+    background: inherit;
+    filter: blur($shadow-blur);
+    opacity: $shadow-opacity;
+  }
+}

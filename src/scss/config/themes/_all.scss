@@ -1,0 +1,28 @@
+$themes-grayscale: ("weiss": $clr_weiss,
+"moonlight": $clr_moonlight,
+"alabaster": $clr_alabaster,
+"silverado": $clr_silverado,
+"boulder": $clr_boulder,
+"tuatara": $clr_tuatara,
+"mineshaft": $clr_mineshaft,
+"nightshift": $clr_nightshift);
+
+$themes-utility: ("success": $clr_success,
+"warning": $clr_warning,
+"failure": $clr_failure,
+"neutral": $clr_neutral);
+
+$themes-brand: ("eastbay": $clr_lx-eastbay,
+"havelock": $clr_lx-havelock,
+"scorpion": $clr_faze-scorpion,
+"persimmon": $clr_faze-persimmon,
+"feijoa": $clr_faze-feijoa,
+"biloba": $clr_faze-biloba,
+"amber": $clr_faze-amber);
+
+$themes: map-merge(map-merge($themes-grayscale, $themes-utility),
+$themes-brand);
+
+@import 'grayscale/all';
+@import 'utility/all';
+@import 'brand/all';

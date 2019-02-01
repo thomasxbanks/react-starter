@@ -1,0 +1,24 @@
+.loading-spinner-element {
+  animation: loadingSpinnerRotate linear 600ms;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes loadingSpinnerRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading_container {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

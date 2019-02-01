@@ -1,0 +1,124 @@
+// Influenced by BBC GEL guidelines (http://www.bbc.co.uk/gel/guidelines/typography)
+// %SilentClasses for extension use only.
+// @extend these basic font stylings for specific content blocks
+// to maintain consistency across the build.
+// These are deliberately _not_ named "Heading 1" etc so as to allow for
+// display text to maintain a visual hierarchy distanced from the
+// semantic hierarchy. While this is not generally good practice, it is
+// all too common and should be accounted for.
+// Extra marks awwwarded for those who got the Sopranos references.
+
+
+%base {
+  font-size-adjust: none;
+  font-variant: normal;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-style: normal;
+}
+
+%tony {
+  @extend %base;
+  font-family: $font_face-accent;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1em;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 2rem;
+    line-height: 1em;
+  }
+}
+
+%silvio {
+  @extend %base;
+  font-family: $font_face-accent;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1em;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 1.5rem;
+    line-height: 1em;
+  }
+}
+
+%paulie {
+  @extend %base;
+  font-family: $font_face-main;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1em;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 1.25rem;
+    line-height: 1em;
+  }
+}
+
+%christopher {
+  @extend %base;
+  font-family: $font_face-main;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1em;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 1.25rem;
+    line-height: 1em;
+  }
+}
+
+%ralphie {
+  @extend %base;
+  font-family: $font_face-main;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1em;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 1rem;
+    line-height: 1em;
+  }
+}
+
+%richie {
+  @extend %base;
+  font-family: $font_face-main;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1em;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 1rem;
+    line-height: 1em;
+  }
+}
+
+%bobby {
+  @extend %base;
+  font-family: $font_face-utility;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 1rem;
+    line-height: 1em;
+  }
+}
+
+%junior {
+  @extend %base;
+  font-family: $font_face-utility;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1em;
+
+  @media screen and (min-width: $breakpoint-min) {
+    font-size: 1rem;
+    line-height: 1em;
+  }
+}

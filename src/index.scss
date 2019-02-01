@@ -1,0 +1,40 @@
+@import 'scss/reset';
+@import 'scss/config/all';
+
+$baseline: 18px;
+
+html {
+  font-size: $baseline;
+}
+
+body {
+  @extend %richie;
+
+  h1 {
+    @extend %tony;
+    line-height: 1.66;
+  }
+
+  a {
+    @extend %junior;
+  }
+
+  button {
+    background: darken(dodgerblue, 15%);
+    color: white;
+    padding: 0.5rem;
+    margin: 1rem;
+    transition: ease 300ms;
+
+    &:hover {
+      cursor: pointer;
+      background: dodgerblue;
+      transform: scale(1.2);
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.notification {
+  display: block;
+}

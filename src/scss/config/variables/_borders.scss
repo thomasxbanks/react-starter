@@ -1,0 +1,20 @@
+$border_width-thin: 0.0625rem; // 1px
+$border_width-std: 0.125rem; // 2px
+$border_width-thick: 0.25rem; // 4px
+
+
+%hairline-border {
+  box-shadow: 0 0 0 0.0625rem;
+
+  @media (min-resolution: 2dppx) {
+    box-shadow: 0 0 0 0.03125rem;
+  }
+
+  @media (min-resolution: 3dppx) {
+    box-shadow: 0 0 0 0.0208333rem;
+  }
+
+  @media (min-resolution: 4dppx) {
+    box-shadow: 0 0 0 0.0015625rem;
+  }
+}

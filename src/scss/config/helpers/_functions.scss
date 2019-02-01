@@ -1,0 +1,9 @@
+@function setDynamicInvertColor($color) {
+  @if (lightness($color) > 70) {
+    @return $clr_mineshaft; // Lighter background, return dark color
+  }
+
+  @else {
+    @return $clr_weiss; // Darker background, return light color
+  }
+}

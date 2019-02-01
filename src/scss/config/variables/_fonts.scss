@@ -1,0 +1,37 @@
+// Face Stack/Family
+@import url("https://fonts.googleapis.com/css?family=Karla");
+// The fallback font stack includes OS specific fonts followed by Emoji rendering fonts.
+$font_face-fallback: 'Karla',
+-apple-system,
+// is San Francisco, used on iOS and macOS (not Chrome however)
+BlinkMacSystemFont,
+// is San Francisco, used on macOS Chrome
+"Segoe UI",
+// is used on Windows 10
+Roboto,
+// is used on Android
+"Oxygen-sans",
+// is used on GNU+Linux
+Ubuntu,
+// is used on Linux
+"Helvetica Neue",
+// is used on macOS 10.10 and below
+Helvetica,
+// is used on macOS 10.10 and below
+Arial,
+// is a font widely supported by all operating systems
+sans-serif,
+// is the fallback sans-serif font if none of the other fonts are supported
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
+
+// Various font stacks used in the build
+// @TODO: The following font stacks use horrendous fonts that (hopefully) would never be used in production.
+// They are here to differentiate the different useage of fonts throughout the application.
+$font_face-main: Noteworthy,
+$font_face-fallback;
+$font_face-accent: Papyrus,
+$font_face-fallback;
+$font_face-utility: ChalkDuster,
+$font_face-fallback;

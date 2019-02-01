@@ -1,0 +1,11 @@
+// Transitions
+$ease-main: cubic-bezier(0.48, 0.37, 0.49, 0.63);
+$ease-swoosh: cubic-bezier(0.29, 0.07, 0.6, 0.99);
+$ease-bounce: cubic-bezier(.79, .45, .62, 1.18);
+
+// Speeds
+$speed-fast: 150ms;
+$speed-std: 300ms;
+$speed-slow: 600ms;
+$speed-slowest: 1000ms;
+$speed-glacial: 10000ms;
